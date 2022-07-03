@@ -1,8 +1,27 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-  }
+body {
+  background-color: #181f2a;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -100rem;
+  color: white;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+.intro {
+  background-color: #1c2431;
+  position: relative;
+}
+
+.intro .background {
+  position: absolute;
+  bottom: 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

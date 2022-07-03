@@ -1,0 +1,28 @@
+@import "common/_variables";
+@import "common/_mixins";
+
+body {
+  @include background;
+  color: $text;
+}
+
+.intro {
+    background-color: $intro-color;
+    position: relative;
+
+    .background {
+      position: absolute;
+      bottom: 5rem;
+
+    }
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

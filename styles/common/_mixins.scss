@@ -1,0 +1,9 @@
+@import "_variables";
+
+@mixin background {
+    
+    background-color: $background-color;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -100rem;
+}
