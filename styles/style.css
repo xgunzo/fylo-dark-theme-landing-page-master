@@ -4,16 +4,59 @@ body {
   background-repeat: no-repeat;
   background-position-y: -100rem;
   color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.container {
+  display: block;
+  max-width: 80%;
+}
+
+.row {
+  padding: 0.5rem 0;
+}
+
+.image-bg {
+  z-index: 1;
 }
 
 .intro {
   background-color: #1c2431;
-  position: relative;
+  text-align: center;
 }
 
-.intro .background {
-  position: absolute;
-  bottom: 5rem;
+.intro h1 {
+  font-weight: 700;
+}
+
+.intro p {
+  font-weight: 400;
+}
+
+.intro .intro-container {
+  background: url("/images/bg-curvy-mobile.svg") bottom no-repeat;
+  position: relative;
+  background-size: 100% 12rem;
+  background-position-y: 15rem;
+}
+
+.intro .intro-container::after {
+  content: "";
+  display: block;
+  background-color: #181f2a;
+}
+
+.btn {
+  background-color: #65e2d9;
+  padding: 1rem;
+  border: none;
+  border-radius: 10rem;
+  color: white;
+  font-weight: 700;
 }
 
 .attribution {
