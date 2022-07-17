@@ -7,6 +7,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
 nav {
   padding: 0 1.5rem;
   padding-top: 1rem;
@@ -41,7 +45,7 @@ section {
 
 .container {
   display: block;
-  width: 90%;
+  width: 95%;
 }
 
 .row {
@@ -193,11 +197,14 @@ h2 {
 
 .opinions .opinion {
   background-color: #202a3c;
-  padding: 2rem 2rem;
+  padding: 2rem 1.5rem;
   font-weight: 400;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.096);
           box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.096);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
 
 .opinions .opinion img {
@@ -213,6 +220,10 @@ h2 {
 .opinions .opinion .opinion-author .about-author {
   padding: 0;
   padding-left: 0.5rem;
+}
+
+.opinions .opinion .opinion-author .about-author h3 {
+  font-size: 0.9rem;
 }
 
 .early-access-box {
@@ -235,6 +246,7 @@ footer {
   padding: 2rem 0;
   background-color: #0b1523;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer .footer-logo {
@@ -302,7 +314,7 @@ footer .footer-icons ul li svg {
 footer::after {
   content: "";
   position: absolute;
-  top: -18rem;
+  top: -17rem;
   left: 0;
   margin: 0 auto;
   width: 100%;

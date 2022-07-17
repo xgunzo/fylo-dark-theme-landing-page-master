@@ -7,6 +7,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
 nav {
   padding: 0 1.5rem;
   padding-top: 1rem;
@@ -44,7 +48,7 @@ section {
 
 .container {
   display: block;
-  width: 90%;
+  width: 95%;
 }
 
 .row {
@@ -196,10 +200,13 @@ h2 {
 
   .opinion {
     background-color: $testimonials;
-    padding: 2rem 2rem;
+    padding: 2rem 1.5rem;
     font-weight: 400;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.096);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
 
     img {
       width: 2rem;
@@ -213,6 +220,11 @@ h2 {
       .about-author {
         padding: 0;
         padding-left: 0.5rem;
+
+        h3 {
+          font-size: 0.9rem;
+        }
+
       }
 
     }
@@ -244,6 +256,7 @@ footer {
   padding: 2rem 0;
   background-color: $footer-background;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 
   .footer-logo {
     padding-bottom: 2rem;
@@ -308,7 +321,7 @@ footer {
   &::after {
     content: "";
     position: absolute;
-    top: -18rem;
+    top: -17rem;
     left: 0;
     margin: 0 auto;
     width: 100%;
