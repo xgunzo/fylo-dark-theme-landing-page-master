@@ -239,6 +239,11 @@ footer {
 
 footer .footer-logo {
   padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+footer .contact li {
+  padding-left: 1rem;
 }
 
 footer .contact li:nth-child(1) {
@@ -259,14 +264,39 @@ footer li {
 }
 
 footer .footer-icons {
-  width: 2rem;
-  height: auto;
+  padding-top: 4rem;
 }
 
-footer .footer-icons li {
+footer .footer-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+
+footer .footer-icons ul li {
   border: 1px solid white;
-  border-radius: 1rem;
+  border-radius: 10rem;
   width: 2rem;
+  margin: 0 0.75rem;
+}
+
+footer .footer-icons ul li svg {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+  display: block;
+  fill: white;
 }
 
 footer::after {
