@@ -1,15 +1,4 @@
-@import "_variables";
 
-@mixin background {
-    
-    background-color: $background-color;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: -100rem;
-}
-
-@mixin mobile-res {
-    
 
 @media screen and (max-width: 374px) {
     body {
@@ -106,13 +95,13 @@
   
         .intro {
           &::after {
-            background-position-y: 24rem;
+            background-position-y: 26rem;
           }
         }
         
         .test {
           &::before {
-            top: 8.5rem;
+            top: 9.5rem;
           }
         }
         
@@ -122,15 +111,14 @@
   
           .intro {
             &::after {
-              background-position-y: 24rem;
+              background-position-y: 28rem;
             }
           }
           
           .test {
             &::before {
-              top: 7rem;
+              top: 10.5rem;
             }
           }
           
           }
-}

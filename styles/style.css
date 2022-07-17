@@ -331,4 +331,76 @@ footer::after {
 .attribution a {
   color: #3e52a3;
 }
+
+@media screen and (max-width: 374px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .test::before {
+    top: 8rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .test::before {
+    top: 6rem;
+  }
+  .footer::after {
+    top: -17rem;
+  }
+}
+
+@media screen and (min-width: 435px) {
+  .intro::after {
+    background-position-y: 18rem;
+  }
+  .test::before {
+    top: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 466px) {
+  .intro::after {
+    background-position-y: 20rem;
+  }
+  .test::before {
+    top: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 488px) {
+  .intro::after {
+    background-position-y: 22rem;
+  }
+  .test::before {
+    top: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .test::before {
+    top: 8.5rem;
+  }
+}
+
+@media screen and (min-width: 536px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .test::before {
+    top: 8.5rem;
+  }
+}
+
+@media screen and (min-width: 552px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .test::before {
+    top: 7rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
