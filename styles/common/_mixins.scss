@@ -1,7 +1,6 @@
 @import "_variables";
 
 @mixin background {
-    
     background-color: $background-color;
     background-size: contain;
     background-repeat: no-repeat;
@@ -16,7 +15,7 @@
       font-size: 0.8rem;
     }
   
-    .test {
+    .intro-text {
       &::before {
         top: 8rem;
       }
@@ -25,7 +24,7 @@
   
   @media screen and (min-width: 375px) and (max-width: 413px) {
 
-    .test {
+    .intro-text {
       &::before {
         top: 6rem;
       }
@@ -46,7 +45,7 @@
     }
   }
   
-  .test {
+  .intro-text {
     &::before {
       top: 5.5rem;
     }
@@ -62,7 +61,7 @@
       }
     }
     
-    .test {
+    .intro-text {
       &::before {
         top: 6.5rem;
       }
@@ -78,7 +77,7 @@
         }
       }
       
-      .test {
+      .intro-text {
         &::before {
           top: 7.5rem;
         }
@@ -94,7 +93,7 @@
         }
       }
       
-      .test {
+      .intro-text {
         &::before {
           top: 8.5rem;
         }
@@ -110,7 +109,7 @@
           }
         }
         
-        .test {
+        .intro-text {
           &::before {
             top: 8.5rem;
           }
@@ -126,11 +125,22 @@
             }
           }
           
-          .test {
+          .intro-text {
             &::before {
               top: 7rem;
             }
           }
           
           }
+}
+
+@mixin desktop-res {
+  @media screen and (min-width: 992px) {
+    .intro-text {
+      &::before {
+        display: none;
+        top: 0rem;
+      }
+    }
+  }
 }

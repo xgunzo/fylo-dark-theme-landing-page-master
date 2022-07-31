@@ -17,13 +17,33 @@ nav {
   display: block;
 }
 
+@media screen and (min-width: 992px) {
+  nav {
+    padding-top: 4rem;
+  }
+}
+
 nav .row {
   padding: 0;
+}
+
+nav .desktop-navbar {
+  margin: 0 auto;
+  width: 98%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav img {
   width: 5rem;
   height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  nav img {
+    width: 10rem;
+  }
 }
 
 nav .nav-menu {
@@ -48,6 +68,12 @@ section {
   width: 95%;
 }
 
+@media screen and (min-width: 992px) {
+  .container {
+    width: 85%;
+  }
+}
+
 .row {
   padding: 0.5rem 0;
 }
@@ -57,6 +83,13 @@ section {
   text-align: center;
   position: relative;
   z-index: 5;
+}
+
+@media screen and (min-width: 992px) {
+  .intro {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
 }
 
 .intro::after {
@@ -73,16 +106,54 @@ section {
   z-index: -1;
 }
 
+@media screen and (min-width: 992px) {
+  .intro::after {
+    background: url("/images/bg-curvy-desktop.svg") bottom no-repeat;
+    background-size: 100% 21rem;
+    background-position-y: 16rem;
+    top: 14rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro .illustration-info {
+    width: 65%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro .illustration-info {
+    width: 80%;
+    height: auto;
+  }
+}
+
 .intro h1 {
   font-weight: 700;
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
 }
 
+@media screen and (min-width: 992px) {
+  .intro h1 {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+}
+
 .intro p {
   font-weight: 400;
   z-index: 4 !important;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .intro p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .intro .intro-container {
@@ -94,12 +165,18 @@ section {
   margin: 0 auto;
 }
 
-.test {
+.intro-text {
   position: relative;
   z-index: 2;
 }
 
-.test::before {
+@media screen and (min-width: 992px) {
+  .intro-text {
+    padding-top: 1rem;
+  }
+}
+
+.intro-text::before {
   content: "";
   position: absolute;
   margin: 0 auto;
@@ -112,12 +189,33 @@ section {
   display: block;
 }
 
+@media screen and (min-width: 992px) {
+  .advantages .advantage {
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
+}
+
 .advantages img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 992px) {
+  .advantages img {
+    width: auto;
+    height: 4rem;
+  }
+}
+
 .advantages h2 {
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .advantages h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
 }
 
 .advantages p {
@@ -127,8 +225,29 @@ section {
   font-weight: 400;
 }
 
+@media screen and (min-width: 992px) {
+  .advantages p {
+    font-size: 0.7rem;
+  }
+}
+
 .stay-productive {
   text-align: left;
+}
+
+@media screen and (min-width: 992px) {
+  .stay-productive {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+  .stay-productive .stay-productive-flex {
+    gap: 2rem;
+  }
+  .stay-productive .stay-productive-img {
+    width: auto;
+    height: 20rem;
+  }
 }
 
 .stay-productive a {
@@ -152,6 +271,12 @@ h2 {
   padding-bottom: 0;
   font-size: 1.4rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.2rem;
+  }
 }
 
 .btn {
@@ -195,6 +320,12 @@ h2 {
   height: auto;
 }
 
+@media screen and (min-width: 992px) {
+  .opinions .opinions-flex {
+    gap: 2rem;
+  }
+}
+
 .opinions .opinion {
   background-color: #202a3c;
   padding: 2rem 1.5rem;
@@ -233,12 +364,18 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 992px) {
+  .early-access-box {
+    padding: 2rem 6rem;
+  }
+}
+
 .early-access-box p {
   padding: 1rem 0;
 }
 
 .early-access-box input {
-  padding: 1rem;
+  padding: 0.5 3rem;
   border-radius: 10rem;
 }
 
@@ -336,13 +473,13 @@ footer::after {
   body {
     font-size: 0.8rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 8rem;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 413px) {
-  .test::before {
+  .intro-text::before {
     top: 6rem;
   }
   .footer::after {
@@ -354,7 +491,7 @@ footer::after {
   .intro::after {
     background-position-y: 18rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 5.5rem;
   }
 }
@@ -363,7 +500,7 @@ footer::after {
   .intro::after {
     background-position-y: 20rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 6.5rem;
   }
 }
@@ -372,7 +509,7 @@ footer::after {
   .intro::after {
     background-position-y: 22rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 7.5rem;
   }
 }
@@ -381,7 +518,7 @@ footer::after {
   .intro::after {
     background-position-y: 24rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 8.5rem;
   }
 }
@@ -390,7 +527,7 @@ footer::after {
   .intro::after {
     background-position-y: 24rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 8.5rem;
   }
 }
@@ -399,8 +536,15 @@ footer::after {
   .intro::after {
     background-position-y: 24rem;
   }
-  .test::before {
+  .intro-text::before {
     top: 7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro-text::before {
+    display: none;
+    top: 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

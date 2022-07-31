@@ -1,6 +1,9 @@
 @import "common/_variables";
 @import "common/_mixins";
 
+
+
+
 body {
   @include background;
   color: $text;
@@ -16,13 +19,26 @@ nav {
   padding-top: 1rem;
   display: block;
 
+  @media screen and (min-width: 992px) {
+    padding-top: 4rem;
+  }
+
   .row {
     padding: 0;
+  }
+
+  .desktop-navbar {
+    margin: 0 auto;
+    width: 98%;
+    align-items: center;
   }
 
   img {
     width: 5rem;
     height: auto;
+    @media screen and (min-width: 992px) {
+      width: 10rem;
+    }
   }
 
   .nav-menu {
@@ -49,6 +65,10 @@ section {
 .container {
   display: block;
   width: 95%;
+
+  @media screen and (min-width: 992px) {
+    width: 85%;
+  }
 }
 
 .row {
@@ -61,7 +81,13 @@ section {
   position: relative;
   z-index: 5;
 
+  @media screen and (min-width: 992px) {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+
   &::after {
+    
     content: "";
     position: absolute;
     top: 0;
@@ -69,22 +95,51 @@ section {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    @media screen and (min-width: 992px) {
+      background: url("/images/bg-curvy-desktop.svg") bottom no-repeat;
+      background-size: 100% 21rem;
+      background-position-y: 16rem;
+      top: 14rem;
+      z-index: -1;
+    }
     background: url("/images/bg-curvy-mobile.svg") bottom no-repeat;
     background-size: 100% 12rem;
     background-position-y: 16rem;
     z-index: -1;
   }
 
+  .illustration-info {
+    @media screen and (min-width: 992px) {
+      width: 65%;
+      height: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 80%;
+      height: auto;
+    }
+  }
+
   h1 {
     font-weight: 700;
     letter-spacing: 0.1rem;
     font-size: 1.4rem;
+    
+    @media screen and (min-width: 992px) {
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+    }
+
   }
 
   p {
     font-weight: 400;
     z-index: 4 !important;
     position: relative;
+
+    @media screen and (min-width: 992px) {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
   }
 
   .intro-container {
@@ -98,9 +153,13 @@ section {
 
 }
 
-.test {
+.intro-text {
   position: relative;
   z-index: 2;
+
+  @media screen and (min-width: 992px) {
+    padding-top: 1rem;
+  }
 
   &::before {
     content: "";
@@ -117,12 +176,30 @@ section {
 }
 
 .advantages {
+  .advantage {
+    @media screen and (min-width: 992px) {
+      padding-top: 1rem;
+      margin: 0 auto;
+
+      
+
+    }
+  }
   img {
     margin: 0 auto;
+
+    @media screen and (min-width: 992px) {
+      width: auto;
+      height: 4rem;
+    }
   }
 
   h2 {
     text-align: center;
+    @media screen and (min-width: 992px) {
+      font-size: 1rem;
+      margin: 0;
+    }
   }
 
   p {
@@ -130,11 +207,29 @@ section {
     padding-bottom: 0;
     text-align: center;
     font-weight: 400;
+    @media screen and (min-width: 992px) {
+      font-size: 0.7rem;
+    }
   }
 }
 
 .stay-productive {
   text-align: left;
+
+  @media screen and (min-width: 992px) {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0;
+    .stay-productive-flex {
+      gap: 2rem;      
+    }
+
+    .stay-productive-img { 
+      width: auto;
+      height: 20rem;
+    }
+  }
+  
 
   a {
     color: $link;
@@ -159,6 +254,9 @@ h2 {
   padding-bottom: 0;
   font-size: 1.4rem;
   font-weight: 700;
+  @media screen and (min-width: 992px) {
+    font-size: 2.2rem;
+  }
 }
 
 .btn {
@@ -196,6 +294,12 @@ h2 {
     margin-left: 1rem;
     width: 2rem;
     height: auto;
+  }
+
+  .opinions-flex {
+    @media screen and (min-width: 992px) {
+      gap: 2rem;
+    }
   }
 
   .opinion {
@@ -237,6 +341,9 @@ h2 {
   &-box {
     border-radius: 0.5rem;
     padding: 3rem 2rem;
+    @media screen and (min-width: 992px) {
+      padding: 2rem 6rem;
+    }
     background-color: $early-access-container;
     text-align: center;
 
@@ -245,7 +352,7 @@ h2 {
     }
 
     input {
-      padding: 1rem;
+      padding: 0.5 3rem;
       border-radius: 10rem;
     }
 
@@ -343,3 +450,4 @@ footer {
 }
 
 @include mobile-res;
+@include desktop-res;
