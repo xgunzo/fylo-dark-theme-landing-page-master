@@ -97,9 +97,9 @@ section {
     height: 100%;
     @media screen and (min-width: 992px) {
       background: url("/images/bg-curvy-desktop.svg") bottom no-repeat;
-      background-size: 100% 21rem;
+      background-size: 100% 23rem;
       background-position-y: 16rem;
-      top: 14rem;
+      top: 12rem;
       z-index: -1;
     }
     background: url("/images/bg-curvy-mobile.svg") bottom no-repeat;
@@ -149,6 +149,9 @@ section {
 
   .btn {
     margin: 0 auto;
+    @media screen and (min-width: 992px) {
+      padding: 1rem rem;
+    }
   }
 
 }
@@ -288,6 +291,9 @@ h2 {
     font-weight: 400;
     font-size: 12px;
     margin: 0;
+    @media screen and (min-width: 992px) {
+      font-size: 0.7rem;
+    }
   }
 
   .quote-icon {
@@ -311,6 +317,10 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
+    box-shadow: 1px 2px 10px -2px rgba(128, 128, 128, 0.11);
+    @media screen and (min-width: 992px) {
+      font-size: 0.7rem;
+    }
 
     img {
       width: 2rem;
@@ -327,6 +337,9 @@ h2 {
 
         h3 {
           font-size: 0.9rem;
+          @media screen and (min-width: 992px) {
+            font-size: 0.7rem;
+          }
         }
 
       }
@@ -346,15 +359,20 @@ h2 {
     }
     background-color: $early-access-container;
     text-align: center;
+    box-shadow: 0 4px 10px -2px black;
 
     p {
       padding: 1rem 0;
+      @media screen and (min-width: 992px) {
+        font-size: 0.7rem;
+      }
     }
 
     input {
-      padding: 0.5 3rem;
+      padding: 1rem 3rem;
       border-radius: 10rem;
     }
+
 
   }
 }
@@ -364,6 +382,13 @@ footer {
   background-color: $footer-background;
   position: relative;
   font-family: 'Open Sans', sans-serif;
+  @media screen and (min-width: 992px) {
+    font-size: 0.7rem;
+  }
+  .row {
+    padding: 0;
+    margin: 0;
+  }
 
   .footer-logo {
     padding-bottom: 2rem;
@@ -394,10 +419,17 @@ footer {
   li {
     list-style: none;
     padding: 0.5rem 0;
+    @media screen and (min-width: 992px) {
+      text-align: left;
+      margin: 0 auto;
+    }
   }
 
   .footer-icons {
     padding-top: 4rem;
+    @media screen and (min-width: 992px) {
+      padding-top: 0;
+    }
 
     ul {
       display: flex;
@@ -405,6 +437,7 @@ footer {
       align-items: baseline;
       flex-direction: row;
       padding: 0;
+      
 
       li {
         border: 1px solid white;
@@ -435,6 +468,9 @@ footer {
     height: 100%;
     background-color: $footer-background;
     z-index: -1;
+    @media screen and (min-width: 992px) {
+      top: -11rem;
+    }
   }
 
 }
