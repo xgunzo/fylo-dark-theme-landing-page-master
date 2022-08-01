@@ -90,7 +90,7 @@
 
 @media screen and (min-width: 992px) {
   .intro::after {
-    background-position-y: 23rem;
+    background-position-y: 22rem;
   }
   .intro-text::before {
     display: none;
@@ -118,57 +118,59 @@
 
 @media screen and (min-width: 1200px) {
   .intro::after {
-    background-position-y: 34.5rem;
+    background-position-y: 26.5rem;
+    background-size: 100% 24rem;
   }
 }
 
 @media screen and (min-width: 1215px) {
   .intro::after {
-    background-position-y: 36rem;
+    background-position-y: 28rem;
+    background-size: 100% 23rem;
   }
 }
 
 @media screen and (min-width: 1261px) {
   .intro::after {
-    background-position-y: 38rem;
+    background-position-y: 29rem;
   }
 }
 
 @media screen and (min-width: 1325px) {
   .intro::after {
-    background-position-y: 37rem;
+    background-position-y: 27rem;
     background-size: 100% 26rem;
   }
 }
 
 @media screen and (min-width: 1380px) {
   .intro::after {
-    background-position-y: 38.5rem;
+    background-position-y: 28rem;
     background-size: 100% 24rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .intro::after {
-    background-position-y: 40rem;
+    background-position-y: 31.5rem;
   }
 }
 
 @media screen and (min-width: 1419px) {
   .intro::after {
-    background-position-y: 42rem;
+    background-position-y: 32rem;
   }
 }
 
 @media screen and (min-width: 1485px) {
   .intro::after {
-    background-position-y: 44rem;
+    background-position-y: 33rem;
   }
 }
 
 @media screen and (min-width: 1547px) {
   .intro::after {
-    background-position-y: 46rem;
+    background-position-y: 33rem;
   }
 }
 
@@ -191,12 +193,6 @@ nav {
   display: block;
 }
 
-@media screen and (min-width: 992px) {
-  nav {
-    padding-top: 4rem;
-  }
-}
-
 nav .row {
   padding: 0;
 }
@@ -207,6 +203,18 @@ nav .desktop-navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  nav .desktop-navbar {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav .desktop-navbar {
+    padding-top: 2rem;
+  }
 }
 
 nav img {
@@ -237,6 +245,12 @@ section {
   padding: 4rem 0;
 }
 
+@media screen and (min-width: 1200px) {
+  section {
+    padding: 1rem 0;
+  }
+}
+
 .container {
   display: block;
   width: 95%;
@@ -245,6 +259,12 @@ section {
 @media screen and (min-width: 992px) {
   .container {
     width: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 90%;
   }
 }
 
@@ -262,7 +282,7 @@ section {
 @media screen and (min-width: 992px) {
   .intro {
     padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 0;
   }
 }
 
@@ -299,7 +319,7 @@ section {
 
 @media screen and (min-width: 1200px) {
   .intro .illustration-info {
-    width: 80%;
+    width: 60%;
     height: auto;
   }
 }
@@ -353,6 +373,7 @@ section {
 @media screen and (min-width: 992px) {
   .intro-text {
     padding-top: 1rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -367,6 +388,13 @@ section {
   background-color: #181f2a;
   z-index: -1;
   display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .advantages {
+    padding-top: 0;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -507,6 +535,15 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
+  .opinions .quote-icon {
+    position: relative;
+    top: 0.5rem;
+    margin-left: -0.25rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .opinions .opinions-flex {
     gap: 2rem;
   }
@@ -554,6 +591,12 @@ h2 {
 @media screen and (min-width: 992px) {
   .opinions .opinion .opinion-author .about-author h3 {
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .early-access {
+    padding-top: 6rem !important;
   }
 }
 
@@ -698,6 +741,12 @@ footer::after {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  footer::after {
+    top: -8rem;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -799,7 +848,7 @@ footer::after {
 
 @media screen and (min-width: 992px) {
   .intro::after {
-    background-position-y: 23rem;
+    background-position-y: 22rem;
   }
   .intro-text::before {
     display: none;
@@ -827,57 +876,59 @@ footer::after {
 
 @media screen and (min-width: 1200px) {
   .intro::after {
-    background-position-y: 34.5rem;
+    background-position-y: 26.5rem;
+    background-size: 100% 24rem;
   }
 }
 
 @media screen and (min-width: 1215px) {
   .intro::after {
-    background-position-y: 36rem;
+    background-position-y: 28rem;
+    background-size: 100% 23rem;
   }
 }
 
 @media screen and (min-width: 1261px) {
   .intro::after {
-    background-position-y: 38rem;
+    background-position-y: 29rem;
   }
 }
 
 @media screen and (min-width: 1325px) {
   .intro::after {
-    background-position-y: 37rem;
+    background-position-y: 27rem;
     background-size: 100% 26rem;
   }
 }
 
 @media screen and (min-width: 1380px) {
   .intro::after {
-    background-position-y: 38.5rem;
+    background-position-y: 28rem;
     background-size: 100% 24rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .intro::after {
-    background-position-y: 40rem;
+    background-position-y: 31.5rem;
   }
 }
 
 @media screen and (min-width: 1419px) {
   .intro::after {
-    background-position-y: 42rem;
+    background-position-y: 32rem;
   }
 }
 
 @media screen and (min-width: 1485px) {
   .intro::after {
-    background-position-y: 44rem;
+    background-position-y: 33rem;
   }
 }
 
 @media screen and (min-width: 1547px) {
   .intro::after {
-    background-position-y: 46rem;
+    background-position-y: 33rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
