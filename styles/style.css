@@ -1,3 +1,177 @@
+@media screen and (max-width: 374px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .intro-text::before {
+    top: 8rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .intro-text::before {
+    top: 6rem;
+  }
+  .footer::after {
+    top: -17rem;
+  }
+}
+
+@media screen and (min-width: 435px) {
+  .intro::after {
+    background-position-y: 18rem;
+  }
+  .intro-text::before {
+    top: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 466px) {
+  .intro::after {
+    background-position-y: 20rem;
+  }
+  .intro-text::before {
+    top: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 488px) {
+  .intro::after {
+    background-position-y: 22rem;
+  }
+  .intro-text::before {
+    top: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .intro-text::before {
+    top: 8rem;
+  }
+}
+
+@media screen and (min-width: 536px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .intro-text::before {
+    top: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 552px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .intro-text::before {
+    top: 7rem;
+  }
+}
+
+@media screen and (min-width: 569px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .intro-text::before {
+    top: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro::after {
+    background-position-y: 32rem;
+  }
+  .intro-text::before {
+    top: 6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro::after {
+    background-position-y: 23rem;
+  }
+  .intro-text::before {
+    display: none;
+    top: 0rem;
+  }
+}
+
+@media screen and (min-width: 1045px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+}
+
+@media screen and (min-width: 1084px) {
+  .intro::after {
+    background-position-y: 25rem;
+  }
+}
+
+@media screen and (min-width: 1084px) {
+  .intro::after {
+    background-position-y: 26rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro::after {
+    background-position-y: 34.5rem;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+  .intro::after {
+    background-position-y: 36rem;
+  }
+}
+
+@media screen and (min-width: 1261px) {
+  .intro::after {
+    background-position-y: 38rem;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .intro::after {
+    background-position-y: 37rem;
+    background-size: 100% 26rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .intro::after {
+    background-position-y: 38.5rem;
+    background-size: 100% 24rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .intro::after {
+    background-position-y: 40rem;
+  }
+}
+
+@media screen and (min-width: 1419px) {
+  .intro::after {
+    background-position-y: 42rem;
+  }
+}
+
+@media screen and (min-width: 1485px) {
+  .intro::after {
+    background-position-y: 44rem;
+  }
+}
+
+@media screen and (min-width: 1547px) {
+  .intro::after {
+    background-position-y: 46rem;
+  }
+}
+
 body {
   background-color: #181f2a;
   background-size: contain;
@@ -583,7 +757,7 @@ footer::after {
     background-position-y: 24rem;
   }
   .intro-text::before {
-    top: 8.5rem;
+    top: 8rem;
   }
 }
 
@@ -592,7 +766,7 @@ footer::after {
     background-position-y: 24rem;
   }
   .intro-text::before {
-    top: 8.5rem;
+    top: 7.5rem;
   }
 }
 
@@ -605,10 +779,105 @@ footer::after {
   }
 }
 
+@media screen and (min-width: 569px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+  .intro-text::before {
+    top: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro::after {
+    background-position-y: 32rem;
+  }
+  .intro-text::before {
+    top: 6rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  .intro::after {
+    background-position-y: 23rem;
+  }
   .intro-text::before {
     display: none;
     top: 0rem;
+  }
+}
+
+@media screen and (min-width: 1045px) {
+  .intro::after {
+    background-position-y: 24rem;
+  }
+}
+
+@media screen and (min-width: 1084px) {
+  .intro::after {
+    background-position-y: 25rem;
+  }
+}
+
+@media screen and (min-width: 1084px) {
+  .intro::after {
+    background-position-y: 26rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro::after {
+    background-position-y: 34.5rem;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+  .intro::after {
+    background-position-y: 36rem;
+  }
+}
+
+@media screen and (min-width: 1261px) {
+  .intro::after {
+    background-position-y: 38rem;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .intro::after {
+    background-position-y: 37rem;
+    background-size: 100% 26rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .intro::after {
+    background-position-y: 38.5rem;
+    background-size: 100% 24rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .intro::after {
+    background-position-y: 40rem;
+  }
+}
+
+@media screen and (min-width: 1419px) {
+  .intro::after {
+    background-position-y: 42rem;
+  }
+}
+
+@media screen and (min-width: 1485px) {
+  .intro::after {
+    background-position-y: 44rem;
+  }
+}
+
+@media screen and (min-width: 1547px) {
+  .intro::after {
+    background-position-y: 46rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

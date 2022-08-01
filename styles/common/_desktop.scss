@@ -1,0 +1,116 @@
+@mixin desktop-res {
+    @media screen and (min-width: 992px) {
+        .intro {
+            &::after {
+              background-position-y: 23rem;
+            }
+          }
+
+        .intro-text {
+            &::before {
+                display: none;
+                top: 0rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1045px) {
+        .intro {
+            &::after {
+              background-position-y: 24rem;
+            }
+          }
+
+    }
+
+    @media screen and (min-width: 1084px) {
+        .intro {
+            &::after {
+              background-position-y: 25rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1084px) {
+        .intro {
+            &::after {
+              background-position-y: 26rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .intro {
+            &::after {
+              background-position-y: 34.5rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1215px) {
+        .intro {
+            &::after {
+              background-position-y: 36rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1261px) {
+        .intro {
+            &::after {
+              background-position-y: 38rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1325px) {
+        .intro {
+            &::after {
+              background-position-y: 37rem;
+              background-size: 100% 26rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1380px) {
+        .intro {
+            &::after {
+              background-position-y: 38.5rem;
+              background-size: 100% 24rem;
+            }
+          } 
+    }
+
+    @media screen and (min-width: 1400px) {
+        .intro {
+            &::after {
+              background-position-y: 40rem;
+            }
+          }
+    }
+
+    @media screen and (min-width: 1419px) {
+        .intro {
+            &::after {
+              background-position-y: 42rem;
+            }
+          } 
+    }
+
+    @media screen and (min-width: 1485px) {
+        .intro {
+            &::after {
+              background-position-y: 44rem;
+            }
+          } 
+    }
+
+    @media screen and (min-width: 1547px) {
+        .intro {
+            &::after {
+              background-position-y: 46rem;
+            }
+          } 
+    }
+
+}

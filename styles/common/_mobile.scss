@@ -1,124 +1,156 @@
-
-
-@media screen and (max-width: 374px) {
-    body {
-      font-size: 0.8rem;
-    }
-  
-    .test {
-      &::before {
-        top: 8rem;
+@mixin mobile-res { 
+  @media screen and (max-width: 374px) {
+      body {
+        font-size: 0.8rem;
+      }
+    
+      .intro-text {
+        &::before {
+          top: 8rem;
+        }
       }
     }
-  }
+    
+    @media screen and (min-width: 375px) and (max-width: 413px) {
   
-  @media screen and (min-width: 375px) and (max-width: 413px) {
-
-    .test {
-      &::before {
-        top: 6rem;
+      .intro-text {
+        &::before {
+          top: 6rem;
+        }
+      }
+    
+      .footer {
+        &::after {
+          top: -17rem;
+        }
       }
     }
-  
-    .footer {
-      &::after {
-        top: -17rem;
-      }
-    }
-  }
-  
-  @media screen and (min-width: 435px) {
-  
-  .intro {
-    &::after {
-      background-position-y: 18rem;
-    }
-  }
-  
-  .test {
-    &::before {
-      top: 5.5rem;
-    }
-  }
-  
-  }
-  
-  @media screen and (min-width: 466px) {
-  
+    
+    @media screen and (min-width: 435px) {
+    
     .intro {
       &::after {
-        background-position-y: 20rem;
+        background-position-y: 18rem;
       }
     }
     
-    .test {
+    .intro-text {
       &::before {
-        top: 6.5rem;
+        top: 5.5rem;
       }
     }
     
     }
-  
-    @media screen and (min-width: 488px) {
-  
+    
+    @media screen and (min-width: 466px) {
+    
       .intro {
         &::after {
-          background-position-y: 22rem;
+          background-position-y: 20rem;
         }
       }
       
-      .test {
+      .intro-text {
         &::before {
-          top: 7.5rem;
+          top: 6.5rem;
         }
       }
       
       }
-      
-    @media screen and (min-width: 512px) {
-  
-      .intro {
-        &::after {
-          background-position-y: 24rem;
-        }
-      }
-      
-      .test {
-        &::before {
-          top: 8.5rem;
-        }
-      }
-      
-      }
-  
-      @media screen and (min-width: 536px) {
-  
+    
+      @media screen and (min-width: 488px) {
+    
         .intro {
           &::after {
-            background-position-y: 26rem;
+            background-position-y: 22rem;
           }
         }
         
-        .test {
+        .intro-text {
           &::before {
-            top: 9.5rem;
+            top: 7.5rem;
           }
         }
         
         }
-  
-        @media screen and (min-width: 552px) {
-  
+        
+      @media screen and (min-width: 512px) {
+    
+        .intro {
+          &::after {
+            background-position-y: 24rem;
+          }
+        }
+        
+        .intro-text {
+          &::before {
+            top: 8rem;
+          }
+        }
+        
+        }
+    
+        @media screen and (min-width: 536px) {
+    
           .intro {
             &::after {
-              background-position-y: 28rem;
+              background-position-y: 24rem;
             }
           }
           
-          .test {
+          .intro-text {
             &::before {
-              top: 10.5rem;
+              top: 7.5rem;
             }
           }
           
           }
+    
+          @media screen and (min-width: 552px) {
+    
+            .intro {
+              &::after {
+                background-position-y: 24rem;
+              }
+            }
+            
+            .intro-text {
+              &::before {
+                top: 7rem;
+              }
+            }
+            
+            }
+
+            @media screen and (min-width: 569px) {
+    
+              .intro {
+                &::after {
+                  background-position-y: 24rem;
+                }
+              }
+              
+              .intro-text {
+                &::before {
+                  top: 6.5rem;
+                }
+              }
+              
+              }
+
+            @media screen and (min-width: 768px) {
+    
+              .intro {
+                &::after {
+                  background-position-y: 32rem;
+                }
+              }
+              
+              .intro-text {
+                &::before {
+                  top: 6rem;
+                }
+              }
+              
+              }
+            }
