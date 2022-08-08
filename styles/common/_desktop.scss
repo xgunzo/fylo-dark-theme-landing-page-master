@@ -99,10 +99,19 @@
           } 
     }
 
+    @media screen and (min-width: 1440px) {
+      .intro {
+          &::after {
+            background-position-y: 35rem;
+            background-size: 100% 26rem;
+          }
+        } 
+  }
+
     @media screen and (min-width: 1485px) {
         .intro {
             &::after {
-              background-position-y: 33rem;
+              background-position-y: 35rem;
             }
           } 
     }
@@ -110,9 +119,34 @@
     @media screen and (min-width: 1547px) {
         .intro {
             &::after {
-              background-position-y: 33rem;
+              background-position-y: 35rem;
             }
           } 
     }
+
+    @media screen and (min-width: 1800px) {
+      .intro {
+          &::after {
+            background-position-y: 18rem;
+            background-size: 100% 29rem;
+          }
+        } 
+  }
+
+    @media screen and (min-width: 1920px) {
+      .intro {
+          &::after {
+            background-position-y: 19rem;
+            background-size: 100% 28rem;
+          }
+        }
+
+      .intro-text {
+          &::before {
+              display: none;
+              top: -20rem;
+          }
+      }
+  }
 
 }
