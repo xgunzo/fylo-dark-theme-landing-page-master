@@ -90,7 +90,7 @@
 
 @media screen and (min-width: 992px) {
   .intro::after {
-    background-position-y: 22rem;
+    background-position-y: 23rem;
   }
   .intro-text::before {
     display: none;
@@ -267,6 +267,14 @@ nav .nav-menu {
 nav .nav-menu li {
   list-style: none;
   padding: 0 0.75rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+nav .nav-menu li:hover {
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 nav .nav-menu li a {
@@ -601,9 +609,31 @@ section {
   color: #65e2d9;
   text-decoration: none;
   position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.stay-productive a:hover {
+  color: white;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.stay-productive a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  top: 1.5rem;
+  left: 0;
+  background-color: white;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .stay-productive a::after {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   content: "";
   position: absolute;
   width: 100%;
@@ -638,8 +668,6 @@ h2 {
 }
 
 .btn:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   background-color: #65e2d9;
@@ -1101,7 +1129,7 @@ footer::after {
 
 @media screen and (min-width: 992px) {
   .intro::after {
-    background-position-y: 22rem;
+    background-position-y: 23rem;
   }
   .intro-text::before {
     display: none;
