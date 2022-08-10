@@ -347,6 +347,10 @@ section {
     position: relative;
     transition: all 0.2s ease-in;
 
+    .arrow {
+      transition: all 0.2s ease-in;
+    }
+
     &:hover {
       color: white;
       transition: all 0.2s ease-in;
@@ -359,6 +363,10 @@ section {
         left: 0;
         background-color: white;
         transition: all 0.2s ease-in;
+      }
+      .arrow {
+       fill: white;
+       transition: all 0.2s ease-in;
       }
     }
 
@@ -583,6 +591,34 @@ footer {
   background-color: $footer-background;
   position: relative;
   font-family: 'Open Sans', sans-serif;
+
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a {
+    transition: 0.2s ease-in-out;
+  }
+
+  li {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      text-shadow:
+      -0.5px -0.5px 0 white,
+      -0.5px -0.5px 0 white,
+      -0.5px -0.5px 0 white,
+      -0.5px -0.5px 0 white;
+      color: white !important;
+      transition: 0.2s ease-in-out;
+      a {
+        color: white;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+ 
+ 
   @media screen and (min-width: 992px) {
     font-size: 0.7rem;
   }
@@ -640,6 +676,7 @@ footer {
 
   .footer-icons {
     padding-top: 4rem;
+
     @media screen and (min-width: 992px) {
       padding-top: 0;
     }
@@ -657,6 +694,16 @@ footer {
         border-radius: 10rem;
         width: 2rem;
         margin: 0 0.75rem;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid $link;
+          transition: 0.2s ease-in-out;
+          svg {
+            fill: $link;
+            transition: 0.2s ease-in-out;
+          }
+        }
 
         svg {
           width: 1rem;
