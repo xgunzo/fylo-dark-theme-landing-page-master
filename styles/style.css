@@ -1091,6 +1091,58 @@ footer::after {
   color: #3e52a3;
 }
 
+#mail {
+  position: relative;
+}
+
+#error {
+  display: none;
+  position: relative;
+  bottom: 1.25rem;
+  color: #ff4242;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 992px) {
+  #error {
+    bottom: 0;
+    left: 0;
+    font-size: 0.7rem;
+    top: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #error {
+    left: -1.5rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #error {
+    left: -2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #error {
+    left: -5.5rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #error {
+    left: -6rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #error {
+    left: -6.25rem;
+  }
+}
+
 @media screen and (max-width: 374px) {
   body {
     font-size: 0.8rem;
